@@ -11,3 +11,6 @@ yarn-error.log
 
 # env files
 .env.*
+
+.svelte-kit
+.vercel_build_output

@@ -54,18 +54,19 @@ module.exports = {
         display: 'swap',
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Cheat Sheets`,
-        short_name: `Cheat Sheets`,
-        start_url: `/`,
-        background_color: siteMetadata.backgroundColour,
-        theme_color: siteMetadata.themeColour,
-        display: `standalone`,
-        icon: siteMetadata.faviconPng,
-      },
-    },
-    `gatsby-plugin-offline`,
+    // {
+    //   resolve: `gatsby-plugin-manifest`,
+    //   options: {
+    //     name: `Cheat Sheets`,
+    //     short_name: `Cheat Sheets`,
+    //     start_url: `/`,
+    //     background_color: siteMetadata.backgroundColour,
+    //     theme_color: siteMetadata.themeColour,
+    //     display: `standalone`,
+    //     icon: siteMetadata.faviconPng,
+    //   },
+    // },
+    // `gatsby-plugin-offline`,
+    `gatsby-plugin-remove-serviceworker`,
   ],
 }
